@@ -63,4 +63,4 @@ def circular_motion(blink_number, sleep_time):
     show()
 
 # call the function
-side_to_side_motion(50, 0.4)
+side_to_side_motion(100, 0.1)
