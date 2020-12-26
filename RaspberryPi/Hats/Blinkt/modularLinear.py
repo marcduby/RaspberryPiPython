@@ -20,7 +20,7 @@ class Point():
             self.direction = self.direction * -1
         
         # increment position
-        self.position = position + self.direction
+        self.position = self.position + self.direction
 
         # set the pixel
         set_pixel(self.position, self.red, self.green, self.blue)
