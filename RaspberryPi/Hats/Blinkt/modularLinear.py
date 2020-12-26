@@ -30,12 +30,14 @@ class Click():
     """ class to encapsulate the countdown """
     def __init__(self, epochs=10, sleep_time=0.1):
         self.listeners = []
+        self.epochs = epochs
+        self.sleep_time = sleep_time
 
     def register(self, listener):
         self.listeners.append(listener)
 
     def start(self):
-        for i in range(epochs):
+        for i in range(self.epochs):
             # clear the old pixels
             clear()
 
@@ -47,7 +49,7 @@ class Click():
             show()
 
             # sleep
-            time.sleep(sleep_time)
+            time.sleep(self.sleep_time)
 
         # clear at end of loop
         clear()
