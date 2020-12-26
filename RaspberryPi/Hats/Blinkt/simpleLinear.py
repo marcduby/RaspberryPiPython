@@ -3,11 +3,11 @@ from blinkt import set_pixel, set_brightness, show, clear
 import time
 
 # set the brightness
-set_brightness(0.1)
+set_brightness(0.05)
 
 # methods
 def side_to_side_motion(blink_number, sleep_time, pixel_number=4):
-    """ will rotate light in circular motion """
+    """ will rotate light in side to side motion """
     # set direction
     direction = 1
 
@@ -16,7 +16,7 @@ def side_to_side_motion(blink_number, sleep_time, pixel_number=4):
         # set the pixel
         if pixel_number == 7 or pixel_number == 0:
             direction = direction * -1
-            pixel_number = pixel_number + direction
+        pixel_number = pixel_number + direction
 
         # set the colors
         red = i * 10
