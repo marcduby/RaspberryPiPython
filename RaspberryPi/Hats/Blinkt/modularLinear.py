@@ -57,7 +57,7 @@ class Click():
 
 if __name__ == "__main__":
     # initialize
-    click = Click(epochs=50)
+    click = Click(epochs=200, sleep_time=0.05)
     click.register(Point(255, 0, 0, 4, 1))
     click.register(Point(255, 0, 0, 3, 1))
 
