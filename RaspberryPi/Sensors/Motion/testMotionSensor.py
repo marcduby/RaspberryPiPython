@@ -4,7 +4,7 @@ from gpiozero import MotionSensor
 import time
 import datetime
 
-def get_time:
+def get_time():
     """ returns the current time with format """
     now = datetime.datetime.now()
     time_str = now.strftime("%Y-%m-%d %H:%M:%S")
