@@ -13,6 +13,7 @@ def get_time():
 # assign the sensor
 sensor = MotionSensor(26)
 sleep_time = 2
+counter = 0
 
 # log
 print("starting motion sensor checking")
@@ -24,9 +25,10 @@ while True:
 
     # sleep
     time.sleep(sleep_time)
+    counter = counter + 1
 
     # log
-    print("sensor awake")
+    print("{} - sensor awake".format(counter))
     
     # trigger the sensor
     sensor.wait_for_motion()
