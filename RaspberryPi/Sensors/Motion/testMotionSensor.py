@@ -2,6 +2,13 @@
 # imports
 from gpiozero import MotionSensor
 import time
+import datetime
+
+def get_time:
+    """ returns the current time with format """
+    now = datetime.datetime.now()
+    time_str = now.strftime("%Y-%m-%d %H:%M:%S")
+    return time_str
 
 # assign the sensor
 sensor = MotionSensor(26)
@@ -25,5 +32,5 @@ while True:
     sensor.wait_for_motion()
 
     # print when triggered
-    print("got motion\n")
+    print("{} - got motion\n".format(get_time()))
 
