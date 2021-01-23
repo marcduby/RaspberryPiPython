@@ -1,6 +1,6 @@
 
 # imports
-from pgiozero import MotionSensor
+from gpiozero import MotionSensor
 import time
 
 # assign the sensor
